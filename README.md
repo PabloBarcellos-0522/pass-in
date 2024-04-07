@@ -21,6 +21,6 @@ O Pass.in é uma aplicação de gestão de participantes em eventos presenciais.
 - O participante só pode realizar check-in em um evento uma única vez.
 
 ## <b> Vamos nos conectar..!</b><img src="https://github.com/0xAbdulKhalid/0xAbdulKhalid/raw/main/assets/mdImages/handshake.gif" width ="80">
-<a href="https://www.linkedin.com/in/jhonerodrigues/" target="_blank">
+<a href="https://www.linkedin.com/in/pablobarcellos0522/" target="_blank">
 <img src="https://img.shields.io/badge/linkedin:  Pablo Barcellos-%2300acee.svg?color=405DE6&style=for-the-badge&logo=linkedin&logoColor=white" alt=linkedin style="margin-bottom: 5px;"/>
 </a>
