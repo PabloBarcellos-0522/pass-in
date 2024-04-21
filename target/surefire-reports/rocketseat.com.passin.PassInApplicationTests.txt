@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: rocketseat.com.passin.PassInApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 9.109 s -- in rocketseat.com.passin.PassInApplicationTests
