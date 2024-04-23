@@ -1,0 +1,32 @@
+name: Maven Package
+
+on:
+  push:
+    branches:
+      - main  # Or the branch of your choice
+    tags:
+      - v*  # This will trigger the workflow when you push tags like v1.0
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v2
+
+      - name: Set up Java JDK
+        uses: actions/setup-java@v2
+        with:
+          java-version: '17'  # Set this to the version you need
+          distribution: 'adopt'
+          server-id: github
+          server-username: ${{ secrets.GITHUB_USERNAME }}
+          server-password: ${{ secrets.GITHUB_TOKEN }}
+          settings-path: ${{ github.workspace }}
+
+      - name: Build and publish
+        run: ./mvnw deploy --settings .mvn/settings.xml
+        env:
+          MAVEN_USERNAME: ${{ secrets.GITHUB_USERNAME }}
+          MAVEN_PASSWORD: ${{ secrets.GITHUB_TOKEN }}
