@@ -25,6 +25,9 @@ jobs:
           server-password: ${{ secrets.GITHUB_TOKEN }}
           settings-path: ${{ github.workspace }}
 
+      - name: Make mvnw executable
+        run: chmod +x ./mvnw
+
       - name: Build and publish
         run: ./mvnw deploy --settings .mvn/settings.xml
         env:
